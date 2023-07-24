@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6eaa6378f7be798479d0b1247542e892
+guid: db017e3b8b91f6c4c8b40f374e35a322
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89c96a68502cf2b45b529bc605926978
-      internalID: 1497901292
+      spriteID: 43742377b54b15a49bfb30698432dcef
+      internalID: 276301066
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6768c154a8a2e2a489e6df44fcd273d5
-      internalID: 1561384579
+      spriteID: b0ee5e029172361478104766b1796b1f
+      internalID: -161832098
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e30bbcbc38843f4a902920968576b79
-      internalID: 305207916
+      spriteID: 9f7be17611cbe124d8d5a56f10f8403f
+      internalID: 835305620
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b117808a5d587e4e93390dce7c754e7
-      internalID: -712609668
+      spriteID: 73f19cdb6b5ac414ab941a14843cc1e5
+      internalID: -2091517105
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sawblade2-sheet_0: 1497901292
-      Sawblade2-sheet_1: 1561384579
-      Sawblade2-sheet_2: 305207916
-      Sawblade2-sheet_3: -712609668
+      Sawblade2-sheet_0: 276301066
+      Sawblade2-sheet_1: -161832098
+      Sawblade2-sheet_2: 835305620
+      Sawblade2-sheet_3: -2091517105
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
