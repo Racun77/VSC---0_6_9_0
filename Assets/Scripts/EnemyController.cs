@@ -23,24 +23,33 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (knockBackCounter > 0)
+        if(PlayerController.instance.gameObject.activeSelf == true)
         {
-            knockBackCounter -= Time.deltaTime;
-            if (moveSpeed > 0)
+
+        
+            if (knockBackCounter > 0)
             {
-                moveSpeed = -moveSpeed * 2f; // Ändere die Bewegungsgeschwindigkeit in die entgegengesetzte Richtung
-            }
-            if (knockBackCounter <= 0)
-            {
+                knockBackCounter -= Time.deltaTime;
+                 if (moveSpeed > 0)
+                   {
+                    moveSpeed = -moveSpeed * 2f; // Ändere die Bewegungsgeschwindigkeit in die entgegengesetzte Richtung
+                    }
+                if (knockBackCounter <= 0)
+                {
                 moveSpeed = Mathf.Abs(moveSpeed * .5f); // Setze die Bewegungsgeschwindigkeit auf die Hälfte des ursprünglichen Werts
+                }
+            }
+
+            theRB.velocity = (target.position - transform.position).normalized * moveSpeed; // Bewege den Gegner in Richtung des Spielers
+
+            if (hitCounter > 0f)
+            {
+            hitCounter -= Time.deltaTime; // Verringere den Angriffs-Zähler basierend auf vergangener Zeit
             }
         }
-
-        theRB.velocity = (target.position - transform.position).normalized * moveSpeed; // Bewege den Gegner in Richtung des Spielers
-
-        if (hitCounter > 0f)
+        else
         {
-            hitCounter -= Time.deltaTime; // Verringere den Angriffs-Zähler basierend auf vergangener Zeit
+            theRB.velocity = Vector2.zero;
         }
     }
 

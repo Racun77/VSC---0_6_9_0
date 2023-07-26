@@ -86,10 +86,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theRB: {fileID: 6488261620043847958}
-  moveSpeed: 1
-  damage: 1
+  moveSpeed: 0.8
+  damage: 15
   hitWaitTime: 1
-  health: 5
+  health: 25
   knockBackTime: 0.5
   expToGive: 1
 --- !u!114 &7654697657746815994
