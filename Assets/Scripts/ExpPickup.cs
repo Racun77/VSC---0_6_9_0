@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Runtime.ConstrainedExecution;
+// using System.Drawing;
+// using System.Runtime.ConstrainedExecution;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+//using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class ExpPickup : MonoBehaviour
 {
