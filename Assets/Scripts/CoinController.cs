@@ -13,10 +13,17 @@ public class CoinController : MonoBehaviour
         instance = this; // Singleton - Instanz erstellen, um auf diese Klasse von anderen Skripten aus zugreifen zu können
     }
     public int currentCoins; // Die Anzahl der aktuellen Münzen
+    public CoinPickup coin;
 
     public void AddCoins(int coinsToAdd)     // Diese Methode wird aufgerufen, um Münzen hinzuzufügen
 
     {
         currentCoins += coinsToAdd; //Hier wird der Wert der Variable currentCoins um den Wert der Variablen coinsToAdd erhöht.
+    }
+    public void DropCoin(Vector3 position, int value)
+    {
+        CoinPickup newCoin = Instantiate(coin, position + new Vector3(.2f, .1f, 0f), Quaternion.identity);
+        newCoin.coinAmount = value;
+        newCoin.gameObject.SetActive(true);
     }
 }

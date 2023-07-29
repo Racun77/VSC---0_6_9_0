@@ -14,7 +14,8 @@ public class EnemyController : MonoBehaviour
     public float knockBackTime = .5f; // Zeit, die der Gegner zurückschreckt, nachdem er getroffen wurde
     private float knockBackCounter; // Zähler für die Rückstoßzeit
     public int expToGive = 1;
-
+    public int coinValue = 1;
+    public float coinDropRate = .5f;
     void Start()
     {
         // Finde den Spieler-Controller und setze das Ziel auf dessen Transform
@@ -72,6 +73,11 @@ public class EnemyController : MonoBehaviour
             Destroy(gameObject); // Zerstöre den Gegner, wenn die Gesundheit auf 0 oder darunter fällt
 
             ExperienceLevelController.instance.SpawnExp(transform.position, expToGive);
+
+            if(Random.value <= coinDropRate)
+            {
+                CoinController.instance.DropCoin(transform.position, coinValue);
+            }
         }
 
         DamageNumberController.instance.SpawnDamage(damageToTake, transform.position); // Erzeuge eine Schadensnummer an der Position des Gegners
@@ -87,3 +93,4 @@ public class EnemyController : MonoBehaviour
         }
     }
 }
+
