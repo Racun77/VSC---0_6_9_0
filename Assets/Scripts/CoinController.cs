@@ -19,6 +19,8 @@ public class CoinController : MonoBehaviour
 
     {
         currentCoins += coinsToAdd; //Hier wird der Wert der Variable currentCoins um den Wert der Variablen coinsToAdd erhöht.
+
+        UIController.instance.UpgradeCoins();
     }
     public void DropCoin(Vector3 position, int value)
     {
