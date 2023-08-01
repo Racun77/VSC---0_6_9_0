@@ -29,6 +29,9 @@ public class PlayerController : MonoBehaviour
         {
             AddWeapon(Random.Range(0, unassignedWeapons.Count)); // Diese Funktion wird zu Beginn des Spiels aufgerufen und initialisiert den Spieler
         }
+        moveSpeed = PlayerStatController.instance.moveSpeed[0].value;
+        pickupRange = PlayerStatController.instance.pickupRange[0].value;
+        maxWeapon = Mathf.RoundToInt(PlayerStatController.instance.maxWeapons[0].value);
     }
 
     // Update is called once per frame

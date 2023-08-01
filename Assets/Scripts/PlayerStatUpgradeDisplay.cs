@@ -21,5 +21,10 @@ public class PlayerStatUpgradeDisplay : MonoBehaviour
             upgradeButton.SetActive(false);
         }
     }
-
+    public void ShowMaxLevel()
+    {
+        valueText.text = "Max Level";
+        costText.text = "Max Level";
+        upgradeButton.SetActive(false);
+    }
 }

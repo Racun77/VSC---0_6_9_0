@@ -20,6 +20,7 @@ public class PlayerHealthController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        maxHealth = PlayerStatController.instance.health[0].value;
         currentHealth = maxHealth; // Setze die aktuelle Gesundheit auf die maximale Gesundheit
 
         healthSlider.maxValue = maxHealth; // Setze den Maximalwert des Sliders auf die maximale Gesundheit
