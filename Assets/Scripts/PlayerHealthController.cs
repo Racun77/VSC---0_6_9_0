@@ -40,6 +40,8 @@ public class PlayerHealthController : MonoBehaviour
         if (currentHealth <= 0)
         {
             gameObject.SetActive(false); // Deaktiviere das Spielobjekt (Spieler), wenn die Gesundheit auf oder unter 0 fällt
+        
+            LevelManager.instace.EndLevel()
         }
 
         if (healthSlider != null)
