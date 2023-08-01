@@ -12,6 +12,8 @@ public class PlayerHealthController : MonoBehaviour
 
     public Slider healthSlider; // Slider zur Anzeige der Gesundheit des Spielers
 
+    public GameObject deathEffet;
+
     private void Awake()
     {
         instance = this; // Setze die Instanz auf diese Klasse
@@ -40,8 +42,9 @@ public class PlayerHealthController : MonoBehaviour
         if (currentHealth <= 0)
         {
             gameObject.SetActive(false); // Deaktiviere das Spielobjekt (Spieler), wenn die Gesundheit auf oder unter 0 fällt
-        
-            LevelManager.instace.EndLevel()
+
+            LevelManager.instance.EndLevel();
+            Instantiate(deathEffet, transform.position, transform.rotation);
         }
 
         if (healthSlider != null)

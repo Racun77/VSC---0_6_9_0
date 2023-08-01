@@ -29,4 +29,9 @@ public class LevelManager : MonoBehaviour
             UIController.instance.UpdateTimer(timer);
         }
     }
+
+    public void EndLevel()
+    {
+        gameActive = false;
+    }
 }
